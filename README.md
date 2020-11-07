@@ -4,7 +4,10 @@ The code in this repository implements **PassNet** and **ResBi**, two models tha
     Sorano et al., Automatic Pass Annotation from Soccer VideoStreams Based on Object Detection and LSTM, In Proceedings of ECML-PKDD, 2020.
 
 ## Data sets
-The data sets to reproduce the work can be found at: https://doi.org/10.6084/m9.figshare.c.5036993
+The data sets to reproduce the work can be found at: 
+- Match video tensors: https://doi.org/10.6084/m9.figshare.12562382.v1
+- Pass labels: https://doi.org/10.6084/m9.figshare.12656255.v1
+
 
 ## PassNet and ResBi
 PassNet and ResBi are implemented in Python using [PyTorch](https://pytorch.org/). These models use soccer video broadcasts as input and provide a binary sequence of values, the *Pass Vector*, as output. The figure below shows the general structure that allows the models to make predictions starting from the video frames, and consists of three modules: **Data Extraction**, **Annotation Process** and **Training/Prediction**.
